@@ -4,7 +4,7 @@ import requests
 # endpoint = "https://httpbin.org/anything"
 endpoint = "http://localhost:8000/api"
 
-get_response = requests.get(endpoint, json={"content": "Hello world"})
+get_response = requests.POST(endpoint, json={"content": "Hello world"})
 # print(get_response.status_code)
 # print(get_response.text)
 # print('')
