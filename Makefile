@@ -9,7 +9,7 @@ lint:
 	pylint --disable=R,C backend/*.py backend/api/*.py backend/hshome/*.py 
 test:
 	#test
-	#python -m pytest -vv --cov==mylib --cov==main test_*.py
+	python -m pytest -vv --cov==backend backend/test_*.py
 build:
 	#build container
 	#docker build -t deploy-fastapi .

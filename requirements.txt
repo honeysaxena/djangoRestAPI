@@ -7,3 +7,5 @@ pylint
 pytest
 black
 six==1.16.0
+pytest-cov
+
