@@ -3,10 +3,10 @@ install:
 	pip install --upgrade pip && pip install -r requirements.txt
 format:
 	#format code
-	black backend/*.py py_client/*.py	
+	black backend/*.py backend/api/*.py backend/hshome/*.py	
 lint:
 	#flake8 or #pylint
-	pylint --disable=R,C backend/*.py py_client/*.py
+	pylint --disable=R,C backend/*.py backend/api/*.py backend/hshome/*.py 
 test:
 	#test
 	#python -m pytest -vv --cov==mylib --cov==main test_*.py
