@@ -60,12 +60,12 @@ def signup(request):
         )
 
         # Welcome Email
-        subject = "Welcome to GFG- Django Login!!"
+        subject = "Welcome to APP- Django Login!!"
         message = (
             "Hello "
             + myuser.first_name
             + "!! \n"
-            + "Welcome to GFG!! \nThank you for visiting our website\n. We have also sent you a confirmation email, please confirm your email address. \n\nThanking You\nAnubhav Madhav"
+            + "Welcome to APP!! \nThank you for visiting our website\n. We have also sent you a confirmation email, please confirm your email address. \n\nThanking You\nHoney Saxena"
         )
         from_email = settings.EMAIL_HOST_USER
         to_list = [myuser.email]
@@ -73,7 +73,7 @@ def signup(request):
 
         # Email Address Confirmation Email
         current_site = get_current_site(request)
-        email_subject = "Confirm your Email @ GFG - Django Login!!"
+        email_subject = "Confirm your Email @ APP - Django Login!!"
         message2 = render_to_string(
             "email_confirmation.html",
             {
